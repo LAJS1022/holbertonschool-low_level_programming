@@ -9,7 +9,7 @@
 int main(void)
 {
 int n, last;
-n = 98;
+n = -98;
 last = n % 10;
 printf("Last digit of %d is %d", n, last);
 if (last > 5)
