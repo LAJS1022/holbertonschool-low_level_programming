@@ -1,0 +1,3 @@
+#!/bin/bash
+OUTP_FILE="${CFILE%.c}.s"
+gcc -S -masm=intel "$CFILE" -o "$OUTP_FILE"
