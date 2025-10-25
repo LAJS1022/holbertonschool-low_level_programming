@@ -21,7 +21,7 @@ sign *= -1;
 }
 else if (s[i] >= '0' && s[i] <= '9')
 {
-if (result > (INT_MAX - (s[i] - '0')) / 10)
+if (result > (unsigned int)((INT_MAX - (s[i] - '0')) / 10))
 {
 if (sign == 1)
 return (INT_MAX);
