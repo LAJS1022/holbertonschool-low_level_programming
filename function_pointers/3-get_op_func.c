@@ -1,6 +1,13 @@
 #include "3-calc.h"
 #include <stddef.h>
 
+/**
+ * get_op_func - selects the correct function to perform an operation
+ * @s: operator passed as argument
+ *
+ * Return: pointer to the function that corresponds to the operator,
+ * or NULL if operator is not recognized
+ */
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
