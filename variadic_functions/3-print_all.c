@@ -27,7 +27,7 @@ case 'i':
 printf("%s%d", sep, va_arg(args, int));
 break;
 case 'f':
-printf("%s%f", sep, va_arg(args, double));
+printf("%s%f", va_arg(args, double));
 break;
 case 's':
 s = va_arg(args, char *);
@@ -35,6 +35,9 @@ if (s == NULL)
 s = "(nil)";
 printf("%s%s", sep, s);
 break;
+default:
+i++;
+continue;
 }
 sep = ", ";
 i++;
