@@ -4,7 +4,7 @@
 
 /**
  * print_all - prints anything based on format
- * @format: list of types of arguments
+ * @format: list of types of arguments passed to the function
  *
  * Return: Nothing
  */
@@ -27,7 +27,7 @@ case 'i':
 printf("%s%d", sep, va_arg(args, int));
 break;
 case 'f':
-printf("%s%f", va_arg(args, double));
+printf("%s%f", sep, va_arg(args, double));
 break;
 case 's':
 s = va_arg(args, char *);
